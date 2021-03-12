@@ -7,7 +7,6 @@ import pyfiglet
 from random import randint
 from Crypto.Util.number import long_to_bytes
 import os
-from colorama import Fore, Style
 from platform import node
 from getpass import getuser
 
