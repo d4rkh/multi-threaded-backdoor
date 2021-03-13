@@ -9,11 +9,18 @@ from Crypto.Util.number import long_to_bytes
 import os
 from platform import node
 from getpass import getuser
+from colorama import Fore, Style
 
 os.system('clear')
 
-string = f'''┌──({getuser()}㉿{node()})-[{os.getcwd()}]
-└─$ '''
+BLUE = Fore.BLUE
+LIGHT_BLACK = Fore.LIGHTBLACK_EX
+RESET = Style.RESET_ALL
+
+# string = f'''┌──({getuser()}㉿{node()})-[{os.getcwd()}]
+# └─$ '''
+string = f'''{LIGHT_BLACK}[|-({BLUE}{getuser()}{LIGHT_BLACK}@{BLUE}{node()}{LIGHT_BLACK})-({BLUE}{os.getcwd()}{LIGHT_BLACK})-|]->>{RESET} '''
+
 host = '0.0.0.0'
 port = randint(2000, 4000)
 username = long_to_bytes(7561581).decode()
