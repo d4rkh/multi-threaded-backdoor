@@ -11,4 +11,8 @@ Between 2000 to 4000 .
 
 # How To Use 
 
-Just Run The Command 'python3 service.py'
+Just Run The Following Command
+
+```bash
+d4rkh@linux:~$ python3 service.py
+```
